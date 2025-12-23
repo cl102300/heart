@@ -1,0 +1,39 @@
+/* minimal styles */
+html,body,#root { 
+  height: 100%; 
+  margin: 0; 
+  font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif; 
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+button { 
+  cursor: pointer; 
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* 标签动画效果 */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
